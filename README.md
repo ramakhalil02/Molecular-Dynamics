@@ -26,8 +26,11 @@ The crucial addition is the implementation of **Periodic Boundary Conditions (PB
 ## Core Objectives
 
 1.  **Implement Periodic Boundary Conditions (PBC):** Develop an algorithm to handle particle movement across system boundaries, allowing atoms leaving one side to re-enter from the opposite.
+
 2.  **Apply Minimum Image Convention (MIC):** Optimize the force calculation by ensuring each particle interacts only with the closest image of any other particle, including images in neighboring simulation boxes.
+
 3.  **Establish Initial Conditions:** Implement methods for setting initial positions (e.g., a cubic lattice) and initial velocities (e.g., Maxwell-Boltzmann distribution), including **drift removal** and velocity **rescaling**.
+
 4.  **Verify Conservation Laws:** Demonstrate that the total energy (Hamiltonian) remains conserved throughout the simulation, validating the combined PBC/Verlet approach for large systems.
 
 ---
